@@ -125,12 +125,10 @@ async def entrypoint(ctx: JobContext):
     await session.start(
         agent=Assistant(),
         room=ctx.room,
-        # Noise cancellation disabled for local development (requires LiveKit Cloud)
-        # Uncomment room_input_options when deploying to production with LiveKit Cloud
-        # room_input_options=RoomInputOptions(
-        #     # For telephony applications, use `BVCTelephony` for best results
-        #     noise_cancellation=noise_cancellation.BVC(),
-        # ),
+        room_input_options=RoomInputOptions(
+            # For telephony applications, use `BVCTelephony` for best results
+            noise_cancellation=noise_cancellation.BVC(),
+        ),
     )
 
     # Join the room and connect to the user
