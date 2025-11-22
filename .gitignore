@@ -1,0 +1,48 @@
+# Environment files with API keys
+.env.local
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Node
+node_modules/
+.next/
+out/
+.pnpm-store/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# LiveKit downloaded files
+livekit-server
+livekit-server.exe
+.livekit/
+
+# Temporary files
+*.tmp
+*.bak
+*~
